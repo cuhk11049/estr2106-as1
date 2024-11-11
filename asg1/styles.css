@@ -1,0 +1,182 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    background-image: url("Header1.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+h1, h2, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container-fluid {
+    display: flex;
+}
+
+main {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.nav-link:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+#spotlight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+input:invalid, textarea:invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+input:invalid + .invalid-feedback, textarea:invalid + .invalid-feedback {
+    display: block;
+}
+
+.btn {
+    transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition for transform and box-shadow */
+    border-radius: 8px; /* Rounded corners for buttons */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow effect on hover */
+}
+
+#extraButtons {
+    margin-top: 20px; /* Add space above extra buttons */
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 25px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.section-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+}
+
+.product-list li {
+    font-size: 1.2rem;
+    color: #555;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: block; 
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+
+.product-list li:hover {
+    background: #e0f7fa;
+}
+
+/* 图标样式 */
+.product-list i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #06c9a2;
+}
+
+.product-bg{
+    background-color: #dbf2cf;
+    border-radius: 10px;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: blue;
+    font-size: 1rem; 
+    text-decoration: none; 
+}
+
+.back-to-top:hover {
+    color: darkblue;
+}
+
+ #toastContainer {
+    position: fixed;
+    z-index: 1050; 
+  }
+  
+  .toast {
+    min-width: 200px; /* Optional: Adjust width as needed */
+  }
+  

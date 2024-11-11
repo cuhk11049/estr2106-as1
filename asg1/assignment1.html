@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei - Building a Fully Connected, Intelligent World</title>
+    <link rel="icon" href="Huawei logo1.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="d-flex justify-content-between align-items-center">
+            <ul class="nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Brief">
+                        <button class="btn btn-link">Brief</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">
+                        <button class="btn btn-link">Products</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#commentSection">
+                        <button class="btn btn-link">Comments</button>
+                    </a>
+                </li>
+            </ul>
+        <button id="toggleButton" class="btn btn-info">Hide</button>
+        </div>   
+        <div id="extraButtons" class="d-none mt-3 ms-2" >
+            <button id="alignButton" class="btn btn-primary">Task 1: Align</button>
+            <button id="spotlightButton" class="btn btn-success">Task 2: Spotlight</button>
+            <button id="toastButton" class="btn btn-warning">Task 3: Bootstrap Toast</button>
+        </div>
+        
+    </div>
+    
+                    
+    <header class="bg-light text-center p-4" id="header">
+        <h1>Huawei</h1>
+    </header>
+    <div class="container-fluid">
+        <div id="spotlight" class="fixed-bottom bg-light p-3 border-top col-md-2">
+            <strong>Company Spotlight:</strong>
+            <p id="spotlightText">Leading the world in telecommunications technology.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            
+            <nav class="col-md-2 bg-light p-3">
+                <h4>HUAWEI Mate X3</h4>
+                <br><br><br>
+                <img src="left aside.jpg" class="img-fluid"></img>
+            </nav> 
+            
+            <main class="col-md-8 p-3">
+                <section id="Brief" class="mb-5">
+                    <h2>Brief</h2>
+                    <br>
+                    <p>
+                        Huawei is a Chinese multinational conglomerate technology corporation headquartered in Longgang District, Shenzhen, Guangdong province. It designs, develops, manufactures and sells digital telecommunications equipment, consumer electronics, smart devices, distributed operating systems, electric vehicle autonomous driving systems, and various rooftop solar products. The corporation was founded in 1987 by Ren Zhengfei, a former officer in the People's Liberation Army (PLA)
+                    </p>
+                </section>
+
+                <section id="products" class="mb-5 product-bg">
+                    <h2 class="section-title">Huawei Products</h2>
+                    <ul class="product-list">
+                        <li>
+                            <i class="bi bi-phone"></i>Smartphone
+                        </li>
+                        <li>
+                            <i class="bi bi-watch"></i>Wearable
+                        </li>
+                        <li>
+                            <i class="bi bi-laptop"></i>PC
+                        </li>
+                    </ul>
+                </section>                
+
+                <section id="smartPhone" class="mb-5">
+                    <h2>Smartphone</h2>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Battery</th>
+                                <th>Screen Size</th>
+                                <th>Refresh Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HUAWEI Pura 70 Ultra</td>
+                                <td>5200 mAh</td>
+                                <td>6.4 inches</td>
+                                <td>120HZ</td>
+                            </tr>
+                            <tr>
+                                <td>HUAWEI Mate X3</td>
+                                <td>4800 mAh</td>
+                                <td>7.6 inches</td>
+                                <td>120HZ</td>
+                            </tr>
+                            <tr>
+                                <td>HUAWEI nova 12s</td>
+                                <td>4500 mAh</td>
+                                <td>6.7 inches</td>
+                                <td>90HZ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <div id="commentSection" class="mb-5">
+                    <h2>Current Comments</h2>
+                    <hr>
+                    <div class="comment border p-3 mb-3">
+                        <p><strong>Email:</strong> 1155211049@link.cuhk.edu.hk</p>
+                        <p><strong>Favorite Color:</strong> 
+                        <span class="color-circle" style="background-color: red; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span> Red</p>
+                        <p><strong>Comment:</strong> Amazing!</p>
+                    </div>
+                </div>
+
+                <section id="comments" class="mb-5">
+                    <h2>Submit Your Comments</h2>
+                    <form id="commentForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="color" class="form-label">Favorite Color</label>
+                            <div>
+                                <input type="radio" name="color" value="Red" required> Red
+                            </div>
+                            <div>
+                                <input type="radio" name="color" value="Green" required> Green
+                            </div>
+                            <div>
+                                <input type="radio" name="color" value="Yellow" required> Yellow
+                            </div>
+                            <div>
+                                <input type="radio" name="color" value="Blue" required> Blue
+                            </div>
+                            <div class="invalid-feedback">Please select your favorite color.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment</label>
+                            <textarea id="comment" class="form-control" required></textarea>
+                            <div class="invalid-feedback">Please add a comment.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Comment</button>
+                        <button type="button" class="btn btn-primary" onclick="loadComments()">Load Comment</button>
+                        <button type="button" class="btn btn-primary" onclick="saveComments()">Save Comment</button>
+                    </form>
+                </section>
+                </main>
+
+            
+            <aside class="col-md-2 bg-light p-3">
+                <h4>Latest News</h4>
+                <br>
+                <p>
+                    Huawei Connect 2024 opened in Shanghai on September 19, 2024. With the theme of "Win-win Industry Intelligence", the conference discussed with global thought leaders, business elites, technical experts, partners, developers, etc. how to empower the digital transformation of the industry and seize new opportunities.
+                </p>
+            </aside>
+    
+            
+                
+                <!-- Toast structure -->
+            <div aria-live="polite" aria-atomic="true" class="position-relative">
+            <div id="toastContainer" class="toast-container bottom-0 end-0 p-3" >
+                <div id="timeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <strong class="me-auto">Clock</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        The current time will be displayed here.
+                      </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center p-3">
+        <p id="timer">Duration of stay: 00:00:00</p>
+        <a href="#header" class="back-to-top">
+            <i class="bi bi-arrow-bar-up"></i>Back to top
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
